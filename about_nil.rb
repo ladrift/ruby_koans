@@ -17,7 +17,6 @@ class AboutNil < Neo::Koan
 
       # What message was attached to the exception?
       # (HINT: replace __ with part of the error message.)
-      p ex.message
       assert_match(/undefined method `.*' for .*:.*/, ex.message)
     end
   end
